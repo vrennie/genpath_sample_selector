@@ -7,20 +7,20 @@ st.set_page_config(page_title="Clinic Code Checker", layout="wide")
 st.markdown("""
     <style>
     html, body, [class*="css"] {
-        font-size: 48px !important;
+        font-size: 36px !important;
     }
     .block-container {
         padding-top: 3rem;
         padding-bottom: 3rem;
     }
     .stTextInput > div > div > input {
-        font-size: 48px !important;
+        font-size: 36px !important;
         height: 80px !important;
         line-height: 80px !important;
         padding: 10px 20px !important;
     }
     label {
-        font-size: 48px !important;
+        font-size: 36px !important;
     }
     </style>
 """, unsafe_allow_html=True)
