@@ -62,7 +62,7 @@ try:
                     )
                 else:
                     st.markdown(
-                        f"<div style='color: orange; font-size: 28px; text-align: center;'>⚠️ <b>{clinic_input}</b> is in the list but has not approved.<br><b>DO NOT create a sample card.</b></div>",
+                        f"<div style='color: orange; font-size: 28px; text-align: center;'>⚠️ <b>{clinic_input}</b> is in the list but has not approved.<br><b>Create a sample card.</b></div>",
                         unsafe_allow_html=True
                     )
 except FileNotFoundError:
