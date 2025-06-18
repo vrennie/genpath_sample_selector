@@ -1,14 +1,10 @@
+# sample_card.py
+
 import streamlit as st
 import pandas as pd
-import streamlit_calendar
-from entry_logger import log_entry, weekly_email_job
+from entry_logger import log_entry
 
 st.set_page_config(page_title="Clinic Code Checker", layout="wide")
-
-# Auto weekly email dispatch
-scheduler = streamlit_calendar.Schedule(key="weekly_email", interval="7d")
-if scheduler.run():
-    weekly_email_job()
 
 # App styling
 st.markdown("""
@@ -64,4 +60,3 @@ try:
 
 except FileNotFoundError:
     st.error("❌ Could not find 'current_master_list.xlsx'. Please ensure the file is in the app directory.")
-
