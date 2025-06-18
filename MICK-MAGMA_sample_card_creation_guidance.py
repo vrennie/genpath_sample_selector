@@ -1,12 +1,12 @@
 import streamlit as st
 import pandas as pd
-import streamlit_schedule
+import streamlit-calendar
 from entry_logger import log_entry, weekly_email_job
 
 st.set_page_config(page_title="Clinic Code Checker", layout="wide")
 
 # Auto weekly email dispatch
-scheduler = streamlit_schedule.Schedule(key="weekly_email", interval="7d")
+scheduler = streamlit-calendar.Schedule(key="weekly_email", interval="7d")
 if scheduler.run():
     weekly_email_job()
 
