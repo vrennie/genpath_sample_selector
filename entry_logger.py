@@ -91,7 +91,7 @@ def weekly_email_job():
         "Dear Susanne",
         "In the last week the following samples have been entered that were in PARR-TB districts but have not approved the study:",
         "Please follow up with the clinic manager to indicate that we have data that may improve the patient's treatment.",
-        in_district_unapproved
+        in_district_unapproved,
         "Many thanks,",
         "Vincent",
     )
@@ -100,7 +100,7 @@ def weekly_email_job():
         "Dear Thys",
         "In the last week the following samples have been entered that were identified as not belonging to PARR-TB districts:",
         "Please confirm that the clinic codes are valid and are indeed not in the PARR-TB districts.",
-        not_in_district
+        not_in_district,
         "Many thanks,",
         "Vincent",
     )
